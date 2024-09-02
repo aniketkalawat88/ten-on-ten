@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React , {useState} from 'react'
 
@@ -40,23 +41,23 @@ const Navbar = () => {
     <div>
      <nav className="bg-white border-gray-200 py-2.5 ">
   <div className="flex items-center justify-between max-w-screen-xl px-4 mx-auto">
-    <a href="#" className="flex items-center">
+    <Link href='/' className="flex items-center">
       <img
         src="/assests/logo.png"
         className="h-6 mr-3 sm:h-16"
         alt="Logo"
       />
-    </a>
+    </Link>
     <div className="flex items-center lg:order-2">
       <div className="hidden mt-2  sm:inline-block">
       </div>
-      <a
-      href="#"
+      <Link
+      href="/free-counsular"
       className="bg-heading-main text-primary-main hover:bg-heading-main py-2 px-4 rounded-full text-base font-bold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg lg:inline
        hidden"
     >
      Get Free consulation
-    </a>
+    </Link>
       <button
         data-collapse-toggle="mobile-menu-2"
         type="button"

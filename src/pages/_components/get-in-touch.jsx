@@ -9,7 +9,7 @@ import { FaTwitter } from "react-icons/fa";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import Image from 'next/image';
-// import axios from 'axios';
+import axios from 'axios';
 
 const GetInTouch = () => {
     const [isVal ,setIsVal] = useState({
@@ -25,12 +25,17 @@ const GetInTouch = () => {
     }
     const isFetch = async () => {
         const res = await axios.post("https://sheetdb.io/api/v1/59aqknib5ssla", isVal)
-        console.log(res,"dfghjk")
+        // console.log(res,"dfghjk")
     }
     const handleSubmit = (e) => {
         e.preventDefault();
         // console.log(isVal);
         isFetch();
+        setIsVal({
+            name:'',
+            email:'',
+            message:''
+        })
     }
 
   return (
