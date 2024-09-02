@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import Headcomp from './headcomp'
 import { poppins } from '@/styles/font'
 import { FaLocationDot } from "react-icons/fa6";
@@ -9,22 +9,44 @@ import { FaTwitter } from "react-icons/fa";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import Image from 'next/image';
+import axios from 'axios';
 
 const GetInTouch = () => {
+    const [isVal ,setIsVal] = useState({
+        name:'',
+        email:'',
+        message:''
+    })
+    const handleChange = (e) => {
+        setIsVal({
+            ...isVal,
+            [e.target.name] : e.target.value
+        })
+    }
+    const isFetch = async () => {
+        const res = await axios.post("https://sheetdb.io/api/v1/59aqknib5ssla", isVal)
+        console.log(res,"dfghjk")
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // console.log(isVal);
+        isFetch();
+    }
+
   return (
     <div className="grid grid-cols-2 max-w-7xl mx-auto rounded-3xl overflow-hidden my-20">
         <div className="bg-primary-main/30 px-14 py-8">
             <Headcomp name={'Get in Touch'} />
             <p className="text-secondary-main my-6">Feel Free to drop us a line below.</p>
-            <form className="space-y-6 ">
-                <input type="text" className="w-full p-2 px-6 rounded-full" placeholder="Name" />
-                <input type="text" className="w-full p-2 px-6 rounded-full" placeholder="Email" />
-                <textarea placeholder="Message" className="resize-none w-full rounded-lg h-36 p-2 px-6 " />
+            <form onSubmit={handleSubmit} className="space-y-6 ">
+                <input type="text" name="name" value={isVal.name} onChange={handleChange} className="w-full p-2 px-6 rounded-full" placeholder="Name" />
+                <input type="text" name="email" value={isVal.email} onChange={handleChange} className="w-full p-2 px-6 rounded-full" placeholder="Email" />
+                <textarea name="message" value={isVal.message} placeholder="Message" onChange={handleChange} className="resize-none w-full rounded-lg h-36 p-2 px-6 " />
                 <label className="text-secondary-main flex gap-2 items-center text-sm px-2">
                     <input type="checkbox" className="bg-transparent" />
                     I would like to receive the newsletter.
                 </label>
-                <button className="text-primary-main bg-heading-main p-4 font-bold rounded-full w-36 mt-14 ">Submit</button>
+                <button type="Submit" className="text-primary-main bg-heading-main p-4 font-bold rounded-full w-36 mt-14 ">Submit</button>
             </form>
         </div>
         <div className="bg-heading-main p-14 text-white relative">

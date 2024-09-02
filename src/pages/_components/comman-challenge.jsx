@@ -21,7 +21,7 @@ const CommanChallenge = () => {
                 </ul>
             </div>
             <div>
-                {/* <CommonRight /> */}
+                <CommonRight />
             </div>
             
         </div>

@@ -16,7 +16,21 @@ module.exports = {
         "primary-main":'#C6A669',
         "secondary-main":'#7E8492',
         "heading-main":'#28292D'
-      }
+      },
+      animation:{
+        'spin-slow': 'spin 20s linear infinite',
+        'spin-reverse-slow': 'spin-reverse 10s linear infinite',
+      },
+      keyframes: {
+        'spin': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        'spin-reverse': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(-360deg)' },
+        },
+      },
     },
   },
   plugins: [],
