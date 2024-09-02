@@ -9,7 +9,7 @@ import { FaTwitter } from "react-icons/fa";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import Image from 'next/image';
-import axios from 'axios';
+// import axios from 'axios';
 
 const GetInTouch = () => {
     const [isVal ,setIsVal] = useState({
