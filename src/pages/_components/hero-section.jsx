@@ -6,7 +6,7 @@ import GetCounsularModal from './get-counsular-modal'
 const HeroSection = () => {
   return (
     <div>
-      <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 text-white overflow-hidden h-[520px]">
+      <div className="relative bg-gradient-to-r from-primary-main to-heading-main text-white overflow-hidden lg:h-[32vw] md:h-[40vw] sm:h-[50vw] h-[50vw]">
   <div className="absolute inset-0">
     <img
       src="/assests/01.png"
@@ -15,11 +15,11 @@ const HeroSection = () => {
     />
     <div className="absolute inset-0 bg-black opacity-20" />
   </div>
-  <div className="relative z-10 flex flex-col justify-center items-center h-full text-center max-w-5xl mx-auto">
-    <div className="text-[3.41rem] font-bold leading-tight mb-10">
-    We know you got a <span className="text-heading-main  drop-shadow-[0px_4px_4px_#C6A669]">fantastic Hotel,</span><br /> and that’s why you’re here!
+  <div className="relative z-10 flex flex-col justify-center items-center h-full text-center max-w-5xl mx-auto md:p-0 p-4">
+    <div className="lg:text-[3.41rem] md:text-4xl sm:text-3xl text-xl font-bold xl:leading-tight md:mb-10 sm:mb-6">
+    We know you got a <span className="text-heading-main  drop-shadow-[0px_4px_4px_#C6A669]">fantastic Hotel,</span><span className="md:block">and that’s why you’re here!</span>
     </div>
-    <p className="text-2xl font-medium text-[#FFFFFFCC] mb-8">
+    <p className="md:text-2xl sm:text-xl text-sm font-medium text-[#FFFFFFCC] md:mb-8">
     Growing your hotel business has never been this easy! 
     </p>
     <div

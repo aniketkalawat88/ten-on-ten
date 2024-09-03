@@ -48,8 +48,8 @@ const GetInTouch = () => {
     }
 
   return (
-    <div className="grid grid-cols-2 max-w-7xl mx-auto rounded-3xl overflow-hidden my-20">
-        <div className="bg-primary-main/30 px-14 py-8">
+    <div className="grid md:grid-cols-2 max-w-7xl mx-auto md:rounded-3xl overflow-hidden md:my-20 my-6">
+        <div className="bg-primary-main/30 md:px-14 md:py-8 max-md:p-6">
             <Headcomp name={'Get in Touch'} />
             <p className="text-secondary-main my-6">Feel Free to drop us a line below.</p>
             <form onSubmit={handleSubmit} className="space-y-6 ">
@@ -69,9 +69,9 @@ const GetInTouch = () => {
             </form>
         </div>
         
-        <div className="bg-heading-main p-14 text-white relative">
-            <h1 className="text-primary-main text-[2rem] font-semibold">Contact us</h1>
-            <p className={`text-2xl font-semibold my-5 ${poppins.className}`}>{`We're just a call away from turning your property into a flawless`}<span className="text-primary-main"> 10 out of 10.</span></p>
+        <div className="bg-heading-main md:p-14 p-6 text-white relative">
+            <h1 className="text-primary-main md:text-[2rem] sm:text-2xl text-xl font-semibold">Contact us</h1>
+            <p className={`md:text-2xl sm:text-xl text-base font-semibold my-5 ${poppins.className}`}>{`We're just a call away from turning your property into a flawless`}<span className="text-primary-main"> 10 out of 10.</span></p>
             <div className={`${poppins.className} space-y-3 my-10`}>
                 <p className="flex items-center gap-4">
                     <FaLocationDot className="text-2xl text-primary-main" />B-32 Gautam Nagar, Chetak Bridge, Bhopal (MP) 462024
@@ -89,7 +89,7 @@ const GetInTouch = () => {
                 <RiFacebookCircleLine />
                 <FaYoutube />
             </div>
-            <div className=" h-48 w-64 absolute bottom-0 right-0">
+            <div className=" h-48 w-64 absolute bottom-0 right-0 max-md:hidden">
                 <Image src="/assests/04.png" alt="" fill className="object-cover" />
             </div>
         </div>
