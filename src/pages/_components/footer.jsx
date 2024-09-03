@@ -8,7 +8,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer class="w-full border-t border-t-primary-main">
+    <footer class="w-full shadow-2xl shadow-primary-main">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full">
                 <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">

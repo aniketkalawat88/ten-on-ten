@@ -5,7 +5,7 @@ import { poppins } from '@/styles/font'
 
 const WhyUs = () => {
   return (
-    <div className="bg-primary-main/50 mt-32 pb-20 mb-20">
+    <div className="bg-primary-main/30 mt-32 pb-20 mb-20">
         <div className="max-w-7xl mx-auto p-8 grid grid-cols-12 gap-8 relative">
             <div className="col-span-8">
                 <Headcomp name={'Why us'} />

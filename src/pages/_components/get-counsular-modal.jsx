@@ -1,10 +1,17 @@
-import React , { useState } from 'react'
-import axios from 'axios'
+import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
-const FreeConsular = () => {
-  
+const GetCounsularModal = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   const [isLoading , setIsLoading] = useState(false);
   const [isVal ,setIsVal] = useState({
     name:'',
@@ -39,8 +46,29 @@ const handleSubmit = async (e) => {
 }
 
   return (
-    <div className="min-h-screen bg-primary-main/5 py-6 flex flex-col justify-center sm:py-12">
-      <div className="relative py-3 sm:max-w-xl sm:mx-auto">
+    <div>
+      <button
+        className="bg-heading-main text-primary-main hover:bg-heading-main py-2 px-6 rounded-full text-lg font-bold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg "
+        onClick={openModal}
+      >
+        Get Free consulation
+      </button>
+      <div
+        id="modelConfirm"
+        className={`fixed z-50 inset-0 bg-primary-main/20 bg-opacity-60 overflow-y-auto h-full w-full px-4 ${isOpen ? '' : 'hidden'}`}
+      >
+        <div className="relative top-20 mx-auto rounded-md max-w-xl">
+          <div className="flex justify-end p-2 absolute top-0 right-0 ">
+            <button
+              onClick={closeModal}
+              type="button"
+              className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center z-20 "
+            >
+             X
+            </button>
+          </div>
+          <div className="p-6 pt-0 text-center">
+          <div className="relative py-3 sm:max-w-5xl sm:mx-auto">
         <div className="absolute inset-0 bg-gradient-to-r from-primary-main to-primary-main shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
         <div className="text-white relative px-4 py-10 bg-secondary-main shadow-lg sm:rounded-3xl sm:p-20">
           <div className="text-center pb-6">
@@ -69,7 +97,7 @@ const handleSubmit = async (e) => {
               required 
             />
             <textarea
-              className="shadow mb-4 min-h-0 appearance-none border rounded h-52 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-none"
+              className="shadow mb-4 min-h-0 appearance-none border rounded h-40 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-none"
               type="text"
               placeholder="Type your message here..."
               name="message"
@@ -90,8 +118,11 @@ const handleSubmit = async (e) => {
       <ToastContainer />
         </div>
       </div>
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default FreeConsular
+export default GetCounsularModal;

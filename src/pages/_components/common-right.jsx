@@ -22,7 +22,7 @@ const CommonRight = () => {
       </div>
       <div className="h-[18vw] w-[18vw] rounded-full absolute bg-primary-main/30"></div>
       <div className="h-[10vw] w-[10vw] rounded-full absolute bg-white flex justify-center items-center">
-        <img src="/assests/19.png" alt="No Preview" className=" h-20 w-20 object-cover rounded-full hover:animate-pulse" />
+        <img src="/assests/19.png" alt="No Preview" className=" h-20 w-20 object-cover rounded-full animate-pulse" />
       </div>
   </div>
   )

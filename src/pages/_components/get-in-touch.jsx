@@ -10,8 +10,11 @@ import { RiFacebookCircleLine } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import Image from 'next/image';
 import axios from 'axios';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const GetInTouch = () => {
+    const [isLoading , setIsLoading] = useState(false);
     const [isVal ,setIsVal] = useState({
         name:'',
         email:'',
@@ -23,14 +26,20 @@ const GetInTouch = () => {
             [e.target.name] : e.target.value
         })
     }
-    const isFetch = async () => {
-        const res = await axios.post("https://sheetdb.io/api/v1/59aqknib5ssla", isVal)
-        // console.log(res,"dfghjk")
-    }
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // console.log(isVal);
-        isFetch();
+        try{
+            setIsLoading(true)
+            const res = await axios.post("https://sheetdb.io/api/v1/59aqknib5ssla", isVal);
+            console.log(isVal);
+            toast.success("Data Submitted Successfully")
+            setIsLoading(false)
+        }
+        catch(err){
+            toast.error("❌ Data not Submit")
+            console.log(err,"error hai")
+            setIsLoading(false)
+        }
         setIsVal({
             name:'',
             email:'',
@@ -44,16 +53,22 @@ const GetInTouch = () => {
             <Headcomp name={'Get in Touch'} />
             <p className="text-secondary-main my-6">Feel Free to drop us a line below.</p>
             <form onSubmit={handleSubmit} className="space-y-6 ">
-                <input type="text" name="name" value={isVal.name} onChange={handleChange} className="w-full p-2 px-6 rounded-full" placeholder="Name" />
-                <input type="text" name="email" value={isVal.email} onChange={handleChange} className="w-full p-2 px-6 rounded-full" placeholder="Email" />
-                <textarea name="message" value={isVal.message} placeholder="Message" onChange={handleChange} className="resize-none w-full rounded-lg h-36 p-2 px-6 " />
+                <input type="text" name="name" value={isVal.name} onChange={handleChange} className="w-full p-2 px-6 rounded-full outline-none" placeholder="Name" required/>
+                <input type="text" name="email" value={isVal.email} onChange={handleChange} className="w-full p-2 px-6 rounded-full outline-none" placeholder="Email" required/>
+                <textarea name="message" value={isVal.message} placeholder="Message" onChange={handleChange} className="resize-none w-full rounded-lg h-36 p-2 px-6 outline-none" required/>
                 <label className="text-secondary-main flex gap-2 items-center text-sm px-2">
-                    <input type="checkbox" className="bg-transparent" />
+                    <input type="checkbox" className="bg-transparent" required />
                     I would like to receive the newsletter.
                 </label>
-                <button type="Submit" className="text-primary-main bg-heading-main p-4 font-bold rounded-full w-36 mt-14 ">Submit</button>
+                <button type="Submit" className="text-primary-main bg-heading-main p-4 font-bold rounded-full w-36 mt-14 ">
+                Submit
+                    {
+                        isLoading && <span className="animate-spin">ting </span>
+                    }
+                </button>
             </form>
         </div>
+        
         <div className="bg-heading-main p-14 text-white relative">
             <h1 className="text-primary-main text-[2rem] font-semibold">Contact us</h1>
             <p className={`text-2xl font-semibold my-5 ${poppins.className}`}>{`We're just a call away from turning your property into a flawless`}<span className="text-primary-main"> 10 out of 10.</span></p>
@@ -78,6 +93,8 @@ const GetInTouch = () => {
                 <Image src="/assests/04.png" alt="" fill className="object-cover" />
             </div>
         </div>
+        
+      <ToastContainer />
     </div>
   )
 }

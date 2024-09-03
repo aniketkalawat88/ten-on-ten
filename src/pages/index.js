@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import HeroSection from "./_components/hero-section";
 import CommanChallenge from "./_components/comman-challenge";

@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from 'next/link'
 import React from 'react'
+import GetCounsularModal from './get-counsular-modal'
 
 const HeroSection = () => {
   return (
@@ -20,12 +22,11 @@ const HeroSection = () => {
     <p className="text-2xl font-medium text-[#FFFFFFCC] mb-8">
     Growing your hotel business has never been this easy! 
     </p>
-    <a
-      href="#"
-      className="bg-heading-main text-primary-main hover:bg-heading-main py-2 px-6 rounded-full text-lg font-bold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg "
+    <div
+      className=""
     >
-     Get Free consulation
-    </a>
+     <GetCounsularModal />
+    </div>
   </div>
 </div>
 
