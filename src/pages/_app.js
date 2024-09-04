@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <RouteProvider>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </RouteProvider>
   )
 }

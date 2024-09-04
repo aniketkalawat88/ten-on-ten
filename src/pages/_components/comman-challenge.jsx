@@ -20,7 +20,7 @@ const CommanChallenge = () => {
                     <li>Do you also face issues closing the booking deals ?</li>
                 </ul>
             </div>
-            <div  data-aos="fade-up" data-aos-duration="2000">
+            <div>
                 <CommonRight />
             </div>
             

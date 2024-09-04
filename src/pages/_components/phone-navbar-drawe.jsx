@@ -1,15 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { useState } from "react";
-import { IoMenu } from "react-icons/io5";
+import { useContext } from "react";
 import { RxCross1 } from "react-icons/rx";
+import { RouteContext } from "../../../context/context";
+import { usePathname } from "next/navigation";
 
 export default function PhoneNavbarDrawer() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDrawer = () => {
-    setIsOpen(!isOpen);
-  };
+  const path = usePathname();
+  
+  const {isDrawer,DrawerClose} = useContext(RouteContext)
   
   const categ = [
     {
@@ -41,20 +40,10 @@ export default function PhoneNavbarDrawer() {
 
   return (
     <>
-      <div className="text-center">
-        <button
-          className=""
-          type="button"
-          onClick={toggleDrawer}
-        >
-          
-          <IoMenu className="text-xl" />
-        </button>
-      </div>
 
       <div
-        className={`fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform hidden max-lg:inline ${
+          isDrawer ? "translate-x-0" : "-translate-x-full"
         } bg-white w-64 dark:bg-secondary-main`}
       >
         <h5
@@ -71,7 +60,7 @@ export default function PhoneNavbarDrawer() {
         </h5>
         <button
           type="button"
-          onClick={toggleDrawer}
+          onClick={DrawerClose}
           className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white"
         >
           <RxCross1 className="text-white" />
@@ -83,7 +72,7 @@ export default function PhoneNavbarDrawer() {
               categ.map((ele,i) => (
               <li key={i}>
                 <Link href={ele.link}
-                  className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-orange-100 dark:hover:bg-primary-main group cursor-pointer `} onClick={() => setIsOpen(false)}
+                  className={`flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-orange-100 dark:hover:bg-primary-main group cursor-pointer ${path === ele.path ? "bg-primary-main font-medium" : "text-heading-main"}`} onClick={DrawerClose}
                 >
                   <span className="ms-3">{ele.name}</span>
                 </Link>

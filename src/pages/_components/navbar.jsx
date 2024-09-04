@@ -5,16 +5,13 @@ import React , { useState , useContext } from 'react'
 import { IoMdMenu } from "react-icons/io";
 import PhoneNavbarDrawer from './phone-navbar-drawe';
 import { RouteContext } from '../../../context/context';
+import { IoMenu } from 'react-icons/io5';
 
 const Navbar = () => {
     const path = usePathname();
-    const { PopupOpen } = useContext(RouteContext)
-
-    const [dropdownOpen, setDropdownOpen] = useState(false);
-
-    const toggleDropdown = () => {
-      setDropdownOpen(!dropdownOpen);
-    };
+    const { PopupOpen ,DrawerOpen } = useContext(RouteContext)
+    
+  
     const arr =[
         {
             name:'Home',
@@ -64,7 +61,8 @@ const Navbar = () => {
      Get Free consulation
     </div>
     <div className="hidden max-lg:inline">
-        <PhoneNavbarDrawer />
+        
+        <IoMenu className="text-xl" onClick={DrawerOpen} />
     </div>
     </div>
 
