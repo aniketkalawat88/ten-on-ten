@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "aos/dist/aos.css";
 import aos from "aos";
 import { RouteProvider } from "../../context/context";
+import GetCounsularModal from "./_components/get-counsular-modal";
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <RouteProvider>
+      <GetCounsularModal />
       <Component {...pageProps} />
     </RouteProvider>
   )

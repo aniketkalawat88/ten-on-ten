@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link'
-import React  from 'react'
-import GetCounsularModal from './get-counsular-modal'
+import React , {useContext}  from 'react'
+import { RouteContext } from '../../../context/context'
 
 const HeroSection = () => {
+  const { PopupOpen  } = useContext(RouteContext)
   
   return (
     <div>
@@ -24,7 +24,12 @@ const HeroSection = () => {
     Growing your hotel business has never been this easy! 
     </p>
     <div>
-     <GetCounsularModal />
+    <button
+        className="bg-heading-main text-primary-main hover:bg-heading-main md:py-2 md:px-6 px-1 py-1 rounded-full lg:text-lg sm:text-base text-sm font-bold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg "
+        onClick={PopupOpen}
+      >
+        Get Free consulation
+      </button>
     </div>
   </div>
 </div>

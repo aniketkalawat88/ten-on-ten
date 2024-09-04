@@ -4,7 +4,7 @@ import { RxCross1 } from "react-icons/rx";
 import { RouteContext } from '../../../context/context';
 
 const GetCounsularModal = () => {
-  const { isPopup , PopupOpen , PopupClose } = useContext(RouteContext)
+  const { isPopup , PopupClose } = useContext(RouteContext)
 
 
   const [isLoading , setIsLoading] = useState(false);
@@ -42,12 +42,12 @@ const handleSubmit = async (e) => {
 
   return (
     <div>
-      <button
+      {/* <button
         className="bg-heading-main text-primary-main hover:bg-heading-main md:py-2 md:px-6 px-1 py-1 rounded-full lg:text-lg sm:text-base text-sm font-bold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg "
         onClick={PopupOpen}
       >
         Get Free consulation
-      </button>
+      </button> */}
       <div 
         id="modelConfirm"
         className={`fixed z-50 inset-0 bg-white bg-opacity-60 overflow-y-auto h-full w-full px-4 ${isPopup ? '' : 'hidden'}`}
