@@ -10,8 +10,8 @@ const CommanChallenge = () => {
         <div className="grid md:grid-cols-2 md:my-10">
             <div>
                 <Headcomp name={'Common Challenges'} />
-                <div className="md:text-xl text-base font-semibold md:my-6 my-2 text-heading-main">We know growing your hotel business can be a fuss sometimes, sign up and see your <span className="text-primary-main "> business grow with us!</span></div>
-                <ul className="md:text-xl sm:text-lg text-base md:space-y-6 sm:space-y-4 space-y-2 pl-5 list-disc font-medium text-secondary-main w-[95%] text-justify">
+                <div data-aos="zoom-out-up" data-aos-duration="1000" className="md:text-xl text-base font-semibold md:my-6 my-2 text-heading-main">We know growing your hotel business can be a fuss sometimes, sign up and see your <span className="text-primary-main "> business grow with us!</span></div>
+                <ul data-aos="fade-up" data-aos-duration="1000" className="md:text-xl sm:text-lg text-base md:space-y-6 sm:space-y-4 space-y-2 pl-5 list-disc font-medium text-secondary-main w-[95%] text-justify">
                     <li>Do you also want to increase your booking score ?</li>
                     <li>Do you also think that you deserve more bookings than competitors around ?</li>
                     <li>Do you also face issues handling business bookings online ?</li>
@@ -20,19 +20,19 @@ const CommanChallenge = () => {
                     <li>Do you also face issues closing the booking deals ?</li>
                 </ul>
             </div>
-            <div>
+            <div  data-aos="fade-up" data-aos-duration="2000">
                 <CommonRight />
             </div>
             
         </div>
         <div className="relative lg:my-10 md:my-8 sm:my-6 my-4 " >
             <Headcomp name={'Our Solutions'} />
-            <p className="md:text-xl sm:text-lg text-base font-medium text-secondary-main my-4 max-w-6xl">With our advanced booking management system and OTA platform, handover your booking hassel to us and watch them boom! </p>
+            <p data-aos="fade-up" data-aos-duration="1000" className="md:text-xl sm:text-lg text-base font-medium text-secondary-main my-4 max-w-6xl">With our advanced booking management system and OTA platform, handover your booking hassel to us and watch them boom! </p>
             <div className="">
             <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:w-[96%] mx-auto md:gap-8 sm:gap-6 gap-4">
                 {
                     sol.map((ele,i) => (
-                        <div key={i} className="md:py-6 py-4 md:px-4 px-2 shadow-2xl rounded-xl bg-white" >
+                        <div data-aos="fade-right" data-aos-duration={(i+1)*1000} key={i} className="md:py-6 py-4 md:px-4 px-2 shadow-2xl rounded-xl bg-white" >
                             <div className="relative md:h-56 h-40 w-full">
                                 <Image src="/assests/02.png" alt="" fill className="object-cover rounded-xl" />
                             </div>

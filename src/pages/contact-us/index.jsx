@@ -8,6 +8,7 @@ import Headcomp from '../_components/headcomp';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import { FiLoader } from "react-icons/fi";
+import Layout from '../_components/layout';
 
 const ContactUs = () => {
     const [isLoading , setIsLoading] = useState(false);      
@@ -49,12 +50,12 @@ const ContactUs = () => {
         })
     }
   return (
-    <div>
+    <Layout>
         <BlogHeroSection name={'Contact Us'}/>
         <section>
             <div className="mx-auto max-w-6xl px-4 md:py-16 sm:px-6 lg:px-8 lg:py-20 max-md:p-6">
                 <div className="grid md:grid-cols-2 items-center">
-                    <div className=" max-w-md">
+                    <div data-aos="fade-right" data-aos-duration="3000" className=" max-w-md">
                         <p className="md:mt-3 md:text-lg text-base text-[#0F1416]">
                         What are you waiting for...
                         </p>
@@ -97,7 +98,7 @@ const ContactUs = () => {
                     </div>
                     <div className="card h-fit max-w-6xl p-5 md:px-12 shadow-[0px_4px_60px_0px_rgba(0,0,0,0.08)] rounded-xl" id="form">
                         <Headcomp name={'Contact With TenonTen'}/>
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={handleSubmit}  data-aos="zoom-in" data-aos-duration="3000">
                             <div className="mb-6">
                                 <div className="mx-0 mb-1 sm:mb-4">
                                     <label>
@@ -135,7 +136,7 @@ const ContactUs = () => {
                 <ToastContainer />
             </div>
         </section>
-    </div>
+    </Layout>
   )
 }
 

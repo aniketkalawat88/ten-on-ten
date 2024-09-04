@@ -48,7 +48,8 @@ const GetInTouch = () => {
     }
 
   return (
-    <div className="grid md:grid-cols-2 max-w-7xl mx-auto md:rounded-3xl overflow-hidden md:my-20 my-6">
+    <>
+    <div data-aos="zoom-in" data-aos-duration="3000" className="grid md:grid-cols-2 max-w-7xl mx-auto md:rounded-3xl overflow-hidden md:my-20 my-6">
         <div className="bg-primary-main/30 md:px-14 md:py-8 max-md:p-6">
             <Headcomp name={'Get in Touch'} />
             <p className="text-secondary-main my-6">Feel Free to drop us a line below.</p>
@@ -94,8 +95,9 @@ const GetInTouch = () => {
             </div>
         </div>
         
-      <ToastContainer />
     </div>
+      <ToastContainer />
+    </>
   )
 }
 

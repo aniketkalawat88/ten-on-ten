@@ -1,13 +1,14 @@
 import React from 'react'
 import BlogHeroSection from '../_components/blog-hero-section'
 import AboutCompo from '../_components/about-compo'
+import Layout from '../_components/layout'
 
 const index = () => {
   return (
-    <div>
+    <Layout>
         <BlogHeroSection name={'About Us'} />
         <AboutCompo />
-    </div>
+    </Layout>
   )
 }
 

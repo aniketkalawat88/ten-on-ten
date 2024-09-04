@@ -54,9 +54,9 @@ const handleSubmit = async (e) => {
       >
         Get Free consulation
       </button>
-      <div
+      <div 
         id="modelConfirm"
-        className={`fixed z-50 inset-0 bg-secondary-main-main/40 bg-opacity-60 overflow-y-auto h-full w-full px-4 ${isOpen ? '' : 'hidden'}`}
+        className={`fixed z-50 inset-0 bg-white bg-opacity-60 overflow-y-auto h-full w-full px-4 ${isOpen ? '' : 'hidden'}`}
       >
         <div className="relative top-20 mx-auto rounded-md max-w-xl">
           <div className="flex justify-end p-2 absolute top-0 right-0 ">

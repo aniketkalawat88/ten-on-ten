@@ -2,6 +2,7 @@ import React , { useState } from 'react'
 import axios from 'axios'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Layout from '../_components/layout';
 
 const FreeConsular = () => {
   
@@ -39,6 +40,7 @@ const handleSubmit = async (e) => {
 }
 
   return (
+    <Layout>
     <div className="min-h-screen bg-primary-main/5 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
         <div className="absolute inset-0 bg-gradient-to-r from-primary-main to-primary-main shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
@@ -91,6 +93,7 @@ const handleSubmit = async (e) => {
         </div>
       </div>
     </div>
+    </Layout>
   )
 }
 

@@ -1,4 +1,8 @@
 export const DummyData = {
+  user:{
+    email:'aniket@gmail.com',
+    password:'123456'
+  },
   blogs: [
     {
       img: "/assests/07.png",

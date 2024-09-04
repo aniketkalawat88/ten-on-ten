@@ -41,7 +41,7 @@ const Navbar = () => {
     ]
   return (
     <div>
-     <nav className="bg-white border-gray-200 py-2.5 ">
+     <nav  data-aos="fade-down" data-aos-duration="3000" className="bg-white border-gray-200 py-2.5 ">
   <div className="flex items-center justify-between max-w-screen-xl px-4 mx-auto">
     <Link href='/' className="flex items-center">
       <img
