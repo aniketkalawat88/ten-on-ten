@@ -1,17 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState , useContext } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import { RxCross1 } from "react-icons/rx";
+import { RouteContext } from '../../../context/context';
 
 const GetCounsularModal = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isPopup , PopupOpen , PopupClose } = useContext(RouteContext)
 
-  const openModal = () => {
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-  };
 
   const [isLoading , setIsLoading] = useState(false);
   const [isVal ,setIsVal] = useState({
@@ -50,19 +44,19 @@ const handleSubmit = async (e) => {
     <div>
       <button
         className="bg-heading-main text-primary-main hover:bg-heading-main md:py-2 md:px-6 px-1 py-1 rounded-full lg:text-lg sm:text-base text-sm font-bold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg "
-        onClick={openModal}
+        onClick={PopupOpen}
       >
         Get Free consulation
       </button>
       <div 
         id="modelConfirm"
-        className={`fixed z-50 inset-0 bg-white bg-opacity-60 overflow-y-auto h-full w-full px-4 ${isOpen ? '' : 'hidden'}`}
+        className={`fixed z-50 inset-0 bg-white bg-opacity-60 overflow-y-auto h-full w-full px-4 ${isPopup ? '' : 'hidden'}`}
       >
         <div className="relative top-20 mx-auto rounded-md max-w-xl">
           <div className="flex justify-end p-2 absolute top-0 right-0 ">
           </div>
             <button
-              onClick={closeModal}
+              onClick={PopupClose}
               type="button"
               className="text-white absolute right-12 top-6 bg-transparent scale-125 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center z-20 "
             >

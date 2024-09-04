@@ -1,12 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React , {useState} from 'react'
+import React , { useState , useContext } from 'react'
 import { IoMdMenu } from "react-icons/io";
 import PhoneNavbarDrawer from './phone-navbar-drawe';
+import { RouteContext } from '../../../context/context';
 
 const Navbar = () => {
     const path = usePathname();
+    const { PopupOpen } = useContext(RouteContext)
+
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const toggleDropdown = () => {
@@ -53,13 +56,13 @@ const Navbar = () => {
     <div className="flex items-center lg:order-2">
       <div className="hidden mt-2  sm:inline-block">
       </div>
-      <Link
-      href="/free-counsular"
-      className="bg-heading-main text-primary-main hover:bg-heading-main py-2 px-4 rounded-full text-base font-bold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg lg:inline
+      <div
+      className="bg-heading-main cursor-pointer text-primary-main hover:bg-heading-main py-2 px-4 rounded-full text-base font-bold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg lg:inline
        hidden"
+       onClick={PopupOpen}
     >
      Get Free consulation
-    </Link>
+    </div>
     <div className="hidden max-lg:inline">
         <PhoneNavbarDrawer />
     </div>
