@@ -6,6 +6,7 @@ import WhyUs from "./_components/why-us";
 import GetInTouch from "./_components/get-in-touch";
 import { useRouter } from "next/navigation";
 import Layout from "./_components/layout";
+import WhyusTwo from "./_components/whyusTwo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function Home() {
         <HeroSection />
         <CommanChallenge />
         <WhyUs />
+        <WhyusTwo />
         <GetInTouch />
       </main>
     </Layout>
