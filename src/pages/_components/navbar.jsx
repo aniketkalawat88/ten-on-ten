@@ -29,7 +29,7 @@ const Navbar = () => {
             path:'/blogs',
         },
         {
-            name:'About us',
+            name:'About Us',
             link:'/about-us',
             path:'/about-us',
         },

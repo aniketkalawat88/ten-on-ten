@@ -11,7 +11,10 @@ const GetCounsularModal = () => {
   const [isVal ,setIsVal] = useState({
     name:'',
     email:'',
-    message:''
+    number:'',
+    message:'',
+    location:'',
+    property:''
 })
 const handleChange = (e) => {
     setIsVal({
@@ -34,9 +37,12 @@ const handleSubmit = async (e) => {
       setIsLoading(false)
   }
   setIsVal({
-      name:'',
-      email:'',
-      message:''
+    name:'',
+    email:'',
+    number:'',
+    message:'',
+    location:'',
+    property:''
   })
 }
 
@@ -52,18 +58,16 @@ const handleSubmit = async (e) => {
         id="modelConfirm"
         className={`fixed z-50 inset-0 bg-white bg-opacity-60 overflow-y-auto h-full w-full px-4 ${isPopup ? '' : 'hidden'}`}
       >
-        <div className="relative top-20 mx-auto rounded-md max-w-xl">
-          <div className="flex justify-end p-2 absolute top-0 right-0 ">
-          </div>
+        <div className="relative top-10 mx-auto rounded-md max-w-6xl">
+          <div className="p-6 pt-0 text-center">
+          <div className="relative py-3 sm:max-w-4xl sm:mx-auto">
             <button
               onClick={PopupClose}
               type="button"
-              className="text-white absolute right-12 top-6 bg-transparent scale-125 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center z-20 "
+              className="text-white absolute right-8 top-6 bg-transparent scale-125 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center z-20 "
             >
              <RxCross1 />
             </button>
-          <div className="p-6 pt-0 text-center">
-          <div className="relative py-3 sm:max-w-4xl sm:mx-auto">
         <div className="text-white relative px-4 py-10 bg-secondary-main shadow-lg sm:rounded-3xl sm:p-20">
           <div className="text-center pb-6">
             <h1 className="text-3xl">Get Free Consulation</h1>
@@ -71,9 +75,9 @@ const handleSubmit = async (e) => {
               
             </p>
           </div>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
             <input
-              className="shadow mb-4 appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow text-lg appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               placeholder="Name"
               name="name"
@@ -82,7 +86,7 @@ const handleSubmit = async (e) => {
               required 
             />
             <input
-              className="shadow mb-4 appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow text-lg appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="email"
               placeholder="Email"
               name="email"
@@ -90,8 +94,35 @@ const handleSubmit = async (e) => {
               onChange={handleChange}
               required 
             />
+            <input
+              className="shadow text-lg appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Number"
+              name="number"
+              value={isVal.number}
+              onChange={handleChange}
+              required 
+            />
+            <input
+              className="shadow text-lg appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Location"
+              name="location"
+              value={isVal.location}
+              onChange={handleChange}
+              required 
+            />
+            <input
+              className="shadow text-lg appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline col-span-2"
+              type="text"
+              placeholder="Property"
+              name="property"
+              value={isVal.property}
+              onChange={handleChange}
+              required 
+            />
             <textarea
-              className="shadow mb-4 min-h-0 appearance-none border rounded h-40 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-none"
+              className="col-span-2 shadow text-lg min-h-0 appearance-none border rounded h-40 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-none"
               type="text"
               placeholder="Type your message here..."
               name="message"

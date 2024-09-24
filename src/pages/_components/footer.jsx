@@ -35,17 +35,17 @@ const Footer = () => {
             <ul className="text-lg font-medium transition-all duration-500">
               <li className="md:mb-6 mb-2">
                 <a href="#" className="text-heading-main hover:text-gray-900">
-                  website
+                  Website
                 </a>
               </li>
               <li className="md:mb-6 mb-2">
                 <a href="#" className=" text-heading-main hover:text-gray-900">
-                  social media
+                  Social Media
                 </a>
               </li>
               <li>
                 <a href="#" className=" text-heading-main hover:text-gray-900">
-                  branding
+                  Branding
                 </a>
               </li>
             </ul>
@@ -57,7 +57,7 @@ const Footer = () => {
             <ul className="text-lg font-medium transition-all duration-500">
               <li className="md:mb-6 mb-2">
                 <a href="#" className="text-heading-main hover:text-gray-900">
-                  Our projects
+                  Our Projects
                 </a>
               </li>
               <li className="md:mb-6 mb-2">
@@ -74,7 +74,7 @@ const Footer = () => {
             <ul className="text-lg font-medium transition-all duration-500">
               <li className="md:mb-6 mb-2">
                 <a href="#" className="text-heading-main hover:text-gray-900">
-                  Support request
+                  Support Request
                 </a>
               </li>
               <li className="md:mb-6 mb-2">
@@ -91,10 +91,10 @@ const Footer = () => {
               All right Reserved 2024
             </span>
             <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 text-2xl text-heading-main">
-              <FaInstagram />
-              <FaTwitter />
-              <RiFacebookCircleLine />
-              <FaYoutube />
+              <Link href="https://www.instagram.com/tenontenstays/?utm_source=ig_web_button_share_sheet" className="hover:scale-110 transition-transform"> <FaInstagram /></Link>
+                {/* <Link href=""> <FaTwitter /></Link> */}
+                <Link href="https://www.facebook.com/profile.php?id=61566196714389" className="hover:scale-110 transition-transform"> <RiFacebookCircleLine /></Link>
+                {/* <Link href=""> <FaYoutube /></Link> */}
             </div>
           </div>
         </div>
