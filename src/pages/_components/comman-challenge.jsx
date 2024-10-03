@@ -2,6 +2,7 @@ import React from 'react'
 import Headcomp from './headcomp'
 import Image from 'next/image'
 import CommonRight from './common-right'
+import Link from 'next/link'
 
 const CommanChallenge = () => {
     const sol = ["Shock the web! ","Make the online booking platforms work","Calling and support "]
@@ -41,8 +42,8 @@ const CommanChallenge = () => {
                     ))
                 }
             </div>
-            <div className="flex justify-center md:mt-14 sm:mt-8 mt-4">
-                <button className="bg-heading-main text-lg text-primary-main w-56 py-2.5 rounded-full">View all</button>
+            <div className="flex justify-center items-center md:mt-14 sm:mt-8 mt-4">
+                <Link href="/our-service" className="bg-heading-main text-lg text-primary-main flex justify-center items-center w-56 py-2.5 rounded-full">View all</Link>
             </div>
             <div className="w-full absolute bottom-5 -z-10 max-md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 1268 364" fill="none">
