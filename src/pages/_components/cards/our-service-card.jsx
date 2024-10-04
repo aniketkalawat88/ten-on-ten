@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
 
-const OurServiceCard = ({name , detail}) => {
+const OurServiceCard = ({name , detail , img}) => {
   return (
     <div className="flip-container w-full md:h-96 h-72" ontouchstart="this.classList.toggle('hover');">
   <div className="flipper">
       <div className="front p-6 shadow shadow-primary-main/50 rounded-xl md:h-96 h-72 w-full">
         <div className="relative md:h-56 h-44 w-full">
-            <Image src="/assests/07.png" alt="" fill className="object-cover rounded-xl" />
+            <Image src={img} alt="" fill className="object-cover rounded-xl" />
         </div>
         <p className="text-heading-main md:text-2xl text-xl font-semibold text-center my-10">{name}</p>
       </div>

@@ -62,7 +62,7 @@ const Footer = () => {
               </li>
               <li className="md:mb-6 mb-2">
                 <a href="#" className=" text-heading-main hover:text-gray-900">
-                  Carrers
+                  Careers
                 </a>
               </li>
             </ul>
@@ -88,7 +88,7 @@ const Footer = () => {
         <div className="md:py-7 py-2 border-t border-primary-main">
           <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
             <span className="md:text-xl text-base text-heading-main font-medium">
-              All right Reserved 2024
+              All Rights Reserved 2024
             </span>
             <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 text-2xl text-heading-main">
               <Link href="https://www.instagram.com/tenontenstays/?utm_source=ig_web_button_share_sheet" className="hover:scale-110 transition-transform"> <FaInstagram /></Link>

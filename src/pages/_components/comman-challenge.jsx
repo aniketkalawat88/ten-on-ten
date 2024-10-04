@@ -5,7 +5,20 @@ import CommonRight from './common-right'
 import Link from 'next/link'
 
 const CommanChallenge = () => {
-    const sol = ["Shock the web! ","Make the online booking platforms work","Calling and support "]
+    const sol = [
+        {
+            name:"Shock the web! ",
+            img:'/assests/35.png',
+        },
+        {
+            name:"Make the online booking platforms work",
+            img:'/assests/36.png'
+        },
+        {
+            name:"Calling and Support ",
+            img:'/assests/37.png'
+        }
+    ]
   return (
     <div  className="max-w-7xl mx-auto xl:p-0 p-6 ">
         <div className="grid md:grid-cols-2 md:my-10">
@@ -35,9 +48,9 @@ const CommanChallenge = () => {
                     sol.map((ele,i) => (
                         <div data-aos="fade-right" data-aos-duration={(i+1)*1000} key={i} className="md:py-6 py-4 md:px-4 px-2 shadow-2xl rounded-xl bg-white" >
                             <div className="relative md:h-56 h-40 w-full">
-                                <Image src="/assests/02.png" alt="" fill className="object-cover rounded-xl" />
+                                <Image src={ele.img} alt="" fill className="object-cover rounded-xl" />
                             </div>
-                            <p className="lg:text-2xl md:text-xl  text-heading-main text-center md:my-5 my-3 font-semibold" >{ele} </p>
+                            <p className="lg:text-2xl md:text-xl  text-heading-main text-center md:my-5 my-3 font-semibold" >{ele.name} </p>
                         </div>
                     ))
                 }

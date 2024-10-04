@@ -75,7 +75,7 @@ const GetInTouch = () => {
         </div>
         
         <div className="bg-heading-main md:p-14 p-6 text-white relative">
-            <h1 className="text-primary-main md:text-[2rem] sm:text-2xl text-xl font-semibold">Contact us</h1>
+            <h1 className="text-primary-main md:text-[2rem] sm:text-2xl text-xl font-semibold">Contact Us</h1>
             <p className={`md:text-2xl sm:text-xl text-base font-semibold my-5 ${poppins.className}`}>{`We're just a call away from turning your property into a flawless`}<span className="text-primary-main"> 10 out of 10.</span></p>
             <div className={`${poppins.className} space-y-3 my-10`}>
                 <p className="flex items-center gap-4 group cursor-pointer">

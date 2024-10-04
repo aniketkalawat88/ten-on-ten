@@ -48,12 +48,6 @@ const handleSubmit = async (e) => {
 
   return (
     <div>
-      {/* <button
-        className="bg-heading-main text-primary-main hover:bg-heading-main md:py-2 md:px-6 px-1 py-1 rounded-full lg:text-lg sm:text-base text-sm font-bold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg "
-        onClick={PopupOpen}
-      >
-        Get Free consulation
-      </button> */}
       <div 
         id="modelConfirm"
         className={`fixed z-50 inset-0 bg-white bg-opacity-60 overflow-y-auto h-full w-full px-4 ${isPopup ? '' : 'hidden'}`}
@@ -68,9 +62,9 @@ const handleSubmit = async (e) => {
             >
              <RxCross1 />
             </button>
-        <div className="text-white relative px-4 py-10 bg-secondary-main shadow-lg sm:rounded-3xl sm:p-20">
+        <div className="text-white relative px-4 py-10 bg-[#c7a86f] shadow-lg sm:rounded-3xl sm:p-20">
           <div className="text-center pb-6">
-            <h1 className="text-3xl">Get Free Consulation</h1>
+            <h1 className="text-3xl">Get Free Consultation</h1>
             <p className="text-gray-300">
               
             </p>
@@ -131,7 +125,7 @@ const handleSubmit = async (e) => {
               required
             />
             <div className="flex justify-between">
-            <button type="Submit" className="shadow bg-heading-main hover:bg-primary-main text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-44">
+            <button type="Submit" className="shadow hover:bg-heading-main bg-secondary-main text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-44">
                 Submit
                     {
                         isLoading && <span className="animate-spin">ting </span>

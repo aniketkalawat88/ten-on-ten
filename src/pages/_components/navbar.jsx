@@ -19,7 +19,7 @@ const Navbar = () => {
             path:'/',
         },
         {
-            name:'Our Service',
+            name:'Our Solutions',
             link:'/our-service',
             path:'/our-service',
         },
@@ -58,7 +58,7 @@ const Navbar = () => {
        hidden"
        onClick={PopupOpen}
     >
-     Get Free consulation
+     Get Free Consultation!
     </div>
     <div className="hidden max-lg:inline">
         

@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import aos from "aos";
 import { RouteProvider } from "../../context/context";
 import GetCounsularModal from "./_components/get-counsular-modal";
+import Whatsapp from "./_components/whatsapp";
 
 
 export const metadata = {
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <RouteProvider>
+      <Whatsapp />
       <GetCounsularModal />
       <Component {...pageProps} />
     </RouteProvider>

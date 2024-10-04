@@ -97,7 +97,7 @@ const ContactUs = () => {
                         </ul>
                     </div>
                     <div className="card h-fit max-w-6xl p-5 md:px-12 shadow-[0px_4px_60px_0px_rgba(0,0,0,0.08)] rounded-xl" id="form">
-                        <Headcomp name={'Contact With TenonTen'}/>
+                        <Headcomp name={'Contact TenOnTen Stays'}/>
                         <form onSubmit={handleSubmit}  data-aos="zoom-in" data-aos-duration="3000">
                             <div className="mb-6">
                                 <div className="mx-0 mb-1 sm:mb-4">
