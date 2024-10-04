@@ -5,7 +5,7 @@ export const DummyData = {
   },
   blogs: [
     {
-      img: "/assests/38.png",
+      img: "/assests/06.png",
       val:'programming',
       name: "Exclusive | Amtrak’s New Marketing Strategy: It’s Not a Train, It’s a Hotel on Wheels",
       data:'Amtrak on Tuesday began a multiyear marketing campaign as the national passenger railroad tries to capitalize on a new infusion of cash...',
@@ -44,7 +44,7 @@ export const DummyData = {
   ourservice:[
     {
       name:'Website Development',
-      img:'/assests/28.png',
+      img:'/assests/38.png',
       detail:'At Tenontenstays, we design websites specifically for the hospitality industry, making sure they’re not just functional but also friendly and easy to use. Our goal is to simplify everything from booking and room management to guest services, so your hotel can run smoothly and impress your guests. We focus on creating responsive, secure sites that look great on any device and reflect your hotels unique style. '
     },
     {
