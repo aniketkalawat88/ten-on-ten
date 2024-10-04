@@ -18,7 +18,7 @@ const HeroSection = () => {
   </div>
   <div className="relative z-10 flex flex-col justify-center items-center h-full text-center max-w-5xl mx-auto md:p-0 sm:p-4 p-2">
     <div data-aos="fade-up" data-aos-duration="3000" className="lg:text-[3.41rem] md:text-4xl sm:text-3xl text-lg font-bold xl:leading-tight md:mb-10 sm:mb-6">
-    We know you got a <span className="text-heading-main  drop-shadow-[0px_4px_4px_#C6A669]">Fantastic Hotel,</span><span className="block">and that’s why you’re here!</span>
+    We know you got a <span className="md:text-heading-main md: drop-shadow-[0px_4px_4px_#C6A669]">Fantastic Hotel,</span><span className="block">and that’s why you’re here!</span>
     </div>
     <p data-aos="fade-up" data-aos-duration="3000" className="md:text-2xl sm:text-xl text-sm font-medium text-[#FFFFFFCC] md:mb-8">
     Growing your hotel business has never been this easy! 

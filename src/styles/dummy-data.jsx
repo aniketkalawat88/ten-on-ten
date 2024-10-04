@@ -49,7 +49,7 @@ export const DummyData = {
     },
     {
       name:`Social Media Handles`,
-      img:`/assests/07.png`,
+      img:`/assests/46.png`,
       detail:`Our team will develop tailored social media handles for each aspect of your hospitality business, including the hotel, resort, restaurants, and other services. By creating distinct profiles for each, we ensure that every facet of your business receives targeted attention and engagement from your audience. These handles will allow you to communicate directly with different customer segments, showcase unique offerings`
     },
     {
