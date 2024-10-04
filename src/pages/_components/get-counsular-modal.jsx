@@ -122,7 +122,7 @@ const handleSubmit = async (e) => {
               name="message"
               value={isVal.message}
               onChange={handleChange} 
-              required
+            
             />
             <div className="flex justify-between">
             <button type="Submit" className="shadow hover:bg-heading-main bg-secondary-main text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-44">

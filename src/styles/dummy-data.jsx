@@ -54,7 +54,7 @@ export const DummyData = {
     },
     {
       name:`Digital Marketing & Social Media Marketing `,
-      img:`/assests/23.png`,
+      img:`/assests/23.avif`,
       detail:`Our Digital Marketing and Social Media Marketing services are designed to elevate your brand's online presence and drive engagement across multiple platforms. We create strategic, data-driven campaigns tailored to your hotel's needs, focusing on SEO, content creation, PPC advertising, and social media outreach. Our goal is to enhance your visibility and connect with your target audience through compelling content`
     },
     {
@@ -79,37 +79,37 @@ export const DummyData = {
     },
     {
       name:`.Analytics for Growth`,
-      img:`/assests/27.png`,
+      img:`/assests/39.png`,
       detail:`Our Analytics for Growth service provides you with actionable insights to drive your hotel's success. We track and analyze key performance metrics such as booking trends, guest demographics, revenue, and marketing effectiveness. By interpreting this data, we help you understand what’s working and identify areas for improvement. With these insights, you can make informed decisions to optimize operations`
     },
     {
       name:`Sales & Revenue Management`,
-      img:`/assests/29.png`,
+      img:`/assests/40.png`,
       detail:`Our Sales & Revenue Management service is designed to maximize your hotel’s profitability by optimizing pricing strategies and sales tactics. We analyze market trends, competitor pricing, and booking patterns to develop strategies that enhance revenue and attract more guests. By using dynamic pricing models and forecasting tools, we ensure that your rates are competitive and aligned with demand.`
     },
     {
       name:`Channel Manager`,
-      img:`/assests/27.png`,
+      img:`/assests/41.png`,
       detail:`Our Channel Manager service simplifies the way you manage bookings across multiple online travel agencies (OTAs) and booking platforms. By integrating all your channels into one centralized system, we ensure that your room availability, rates, and reservations are updated in real-time, reducing the risk of overbooking and improving your operational efficiency. `
     },
     {
       name:`OTA Management`,
-      img:`/assests/27.png`,
+      img:`/assests/42.avif`,
       detail:`Our OTA Management service helps you effectively manage your presence on online travel agencies (OTAs) to maximize bookings and enhance your property's visibility. We handle everything from setting up and updating your OTA profiles to optimizing your listings with compelling content and competitive pricing. By closely monitoring performance metrics and adjusting strategies based on real-time data`
     },
     {
       name:`Property Management System`,
-      img:`/assests/27.png`,
+      img:`/assests/43.png`,
       detail:`Our Property Management System (PMS) provides a comprehensive solution for managing your hotel’s operations efficiently. From handling reservations and guest check-ins to managing room assignments and housekeeping tasks, our PMS integrates all essential functions into one user-friendly platform. With features like real-time availability updates, automated billing, and detailed reporting`
     },
     {
       name:'Operations Management',
-      img:'/assests/27.png',
+      img:'/assests/44.avif',
       detail:'Our Operations Management service focuses on streamlining and optimizing the daily functions of your hotel to ensure smooth and efficient operations. We work on enhancing processes related to front desk operations, housekeeping, maintenance, and guest services. By implementing best practices and leveraging technology, we help you improve staff productivity, reduce operational costs, and enhance the overall guest experience. ',
     },
     {
       name:'Central Reservation System',
-      img:'/assests/27.png',
+      img:'/assests/45.png',
       detail:'Our Central Reservation System (CRS) and Customer Relationship Management (CRM) services work together to enhance your booking process and build lasting relationships with your guests. The CRS centralizes all reservations, allowing for real-time updates, efficient management of room availability, and streamlined booking across multiple channels. ',
     },
   ]
