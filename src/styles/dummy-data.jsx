@@ -60,32 +60,32 @@ export const DummyData = {
     {
       name:`Visual Media Production`,
       img:`/assests/24.png`,
-      detail:`Our Hotel Aesthetics Guidebook is designed to help you create a cohesive and inviting atmosphere throughout your property. From choosing the right color schemes and furniture to selecting artwork and décor that reflects your brand's identity, this guide offers practical advice and inspiration. We focus on creating a welcoming and visually appealing environment that enhances the guest experience`
+      detail:`Our Visual Media Production is designed to help you create a cohesive and inviting atmosphere throughout your property. From choosing the right color schemes and furniture to selecting artwork and décor that reflects your brand's identity, this guide offers practical advice and inspiration. We focus on creating a welcoming and visually appealing environment that enhances the guest experience`
     },
     {
       name:`Property Styling & Experience Guide`,
       img:`/assests/25.png`,
-      detail:`Our Property Photography services aim to capture the true charm and atmosphere of your hotel, resort, or restaurant. We focus on bringing out the best in your spaces, whether it’s the cozy comfort of a guest room, the warmth of a dining area, or the beauty of your surroundings. Our goal is to provide you with natural, inviting images that help guests imagine themselves enjoying your property.`
+      detail:`Our Property Styling & Experience Guide services aim to capture the true charm and atmosphere of your hotel, resort, or restaurant. We focus on bringing out the best in your spaces, whether it’s the cozy comfort of a guest room, the warmth of a dining area, or the beauty of your surroundings. Our goal is to provide you with natural, inviting images that help guests imagine themselves enjoying your property.`
     },
     {
       name:` Availability & Inventory Control`,
       img:`/assests/26.png`,
-      detail:`Our Inventory Management services are designed to help you keep track of your hotel’s supplies, from room amenities and linens to food and beverages. We streamline the process by implementing efficient tracking systems that monitor stock levels, reduce waste, and ensure you’re always well-prepared without overstocking. This service helps you maintain control over your budget`
+      detail:`Our Availability & Inventory Control services are designed to help you keep track of your hotel’s supplies, from room amenities and linens to food and beverages. We streamline the process by implementing efficient tracking systems that monitor stock levels, reduce waste, and ensure you’re always well-prepared without overstocking. This service helps you maintain control over your budget`
     },
     {
       name:`Direct Booking Support`,
       img:`/assests/27.png`,
-      detail:`Our Bookings Over Call service makes it easy for guests to reserve their stay with just a quick phone call. We prioritize clear, friendly communication, ensuring that your guests feel comfortable and informed throughout the booking process. `
+      detail:`Our Direct Booking Support Over Call service makes it easy for guests to reserve their stay with just a quick phone call. We prioritize clear, friendly communication, ensuring that your guests feel comfortable and informed throughout the booking process. `
     },
     {
       name:`Performance Analytics & Insights`,
       img:`/assests/39.png`,
-      detail:`Our Analytics for Growth service provides you with actionable insights to drive your hotel's success. We track and analyze key performance metrics such as booking trends, guest demographics, revenue, and marketing effectiveness. By interpreting this data, we help you understand what’s working and identify areas for improvement. With these insights, you can make informed decisions to optimize operations`
+      detail:`Our Performance Analytics & Insights for Growth service provides you with actionable insights to drive your hotel's success. We track and analyze key performance metrics such as booking trends, guest demographics, revenue, and marketing effectiveness. By interpreting this data, we help you understand what’s working and identify areas for improvement. With these insights, you can make informed decisions to optimize operations`
     },
     {
       name:`Revenue Optimization & Sales Strategy`,
       img:`/assests/40.png`,
-      detail:`Our Sales & Revenue Management service is designed to maximize your hotel’s profitability by optimizing pricing strategies and sales tactics. We analyze market trends, competitor pricing, and booking patterns to develop strategies that enhance revenue and attract more guests. By using dynamic pricing models and forecasting tools, we ensure that your rates are competitive and aligned with demand.`
+      detail:`Our Revenue Optimization & Sales Strategy service is designed to maximize your hotel’s profitability by optimizing pricing strategies and sales tactics. We analyze market trends, competitor pricing, and booking patterns to develop strategies that enhance revenue and attract more guests. By using dynamic pricing models and forecasting tools, we ensure that your rates are competitive and aligned with demand.`
     },
     {
       name:`Channel Manager`,
@@ -105,7 +105,7 @@ export const DummyData = {
     {
       name:'Hospitality Operations Oversight',
       img:'/assests/44.avif',
-      detail:'Our Operations Management service focuses on streamlining and optimizing the daily functions of your hotel to ensure smooth and efficient operations. We work on enhancing processes related to front desk operations, housekeeping, maintenance, and guest services. By implementing best practices and leveraging technology, we help you improve staff productivity, reduce operational costs, and enhance the overall guest experience. ',
+      detail:'Our Hospitality Operations Oversight focuses on streamlining and optimizing the daily functions of your hotel to ensure smooth and efficient operations. We work on enhancing processes related to front desk operations, housekeeping, maintenance, and guest services. By implementing best practices and leveraging technology, we help you improve staff productivity, reduce operational costs, and enhance the overall guest experience. ',
     },
     {
       name:'Central Reservation System/ Customer Relationship Management',
