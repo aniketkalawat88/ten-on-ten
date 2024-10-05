@@ -60,12 +60,12 @@ export const DummyData = {
     {
       name:`Visual Media Production`,
       img:`/assests/24.png`,
-      detail:`Our Visual Media Production is designed to help you create a cohesive and inviting atmosphere throughout your property. From choosing the right color schemes and furniture to selecting artwork and décor that reflects your brand's identity, this guide offers practical advice and inspiration. We focus on creating a welcoming and visually appealing environment that enhances the guest experience`
+      detail:`Our Visual Media Production services aim to capture the true charm and atmosphere of your hotel, resort, or restaurant. We focus on bringing out the best in your spaces, whether it’s the cozy comfort of a guest room, the warmth of a dining area, or the beauty of your surroundings. Our goal is to provide you with natural, inviting images that help guests imagine themselves enjoying your property.`
     },
     {
       name:`Property Styling & Experience Guide`,
       img:`/assests/25.png`,
-      detail:`Our Property Styling & Experience Guide services aim to capture the true charm and atmosphere of your hotel, resort, or restaurant. We focus on bringing out the best in your spaces, whether it’s the cozy comfort of a guest room, the warmth of a dining area, or the beauty of your surroundings. Our goal is to provide you with natural, inviting images that help guests imagine themselves enjoying your property.`
+      detail:`Our Property Styling & Experience Guide is designed to help you create a cohesive and inviting atmosphere throughout your property. From choosing the right color schemes and furniture to selecting artwork and décor that reflects your brand's identity, this guide offers practical advice and inspiration. We focus on creating a welcoming and visually appealing environment that enhances the guest experience.`
     },
     {
       name:` Availability & Inventory Control`,
