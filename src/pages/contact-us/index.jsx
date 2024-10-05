@@ -17,6 +17,7 @@ const ContactUs = () => {
         email: '',
         number: '',
         message: '',
+        location: '',
         property: ''  // Added property field
     });
 
@@ -48,6 +49,7 @@ const ContactUs = () => {
             email: '',
             number: '',
             message: '',
+            location: '',
             property: ''  // Reset property field
         });
     };
@@ -151,6 +153,19 @@ const ContactUs = () => {
                                                 className="outline-none mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0"
                                                 name="number"
                                                 value={isVal.number}
+                                                onChange={handleChange}
+                                            />
+                                        </label>
+                                        <label>
+                                            <p className="text-xs font-semibold text-heading-main my-3">Location</p>
+                                            <input
+                                                type="text"
+                                                id="location"
+                                                autoComplete=""
+                                                placeholder="Your Location"
+                                                className="outline-none mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0"
+                                                name="location"
+                                                value={isVal.location}
                                                 onChange={handleChange}
                                             />
                                         </label>

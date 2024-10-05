@@ -34,19 +34,19 @@ const Footer = () => {
             </h4>
             <ul className="text-lg font-medium transition-all duration-500">
               <li className="md:mb-6 mb-2">
-                <a href="#" className="text-heading-main hover:text-gray-900">
+                <Link href="#" className="text-heading-main hover:text-gray-900">
                   Website
-                </a>
+                </Link>
               </li>
               <li className="md:mb-6 mb-2">
-                <a href="#" className=" text-heading-main hover:text-gray-900">
+                <Link href="#" className=" text-heading-main hover:text-gray-900">
                   Social Media
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className=" text-heading-main hover:text-gray-900">
+                <Link href="#" className=" text-heading-main hover:text-gray-900">
                   Branding
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -56,14 +56,14 @@ const Footer = () => {
             </h4>
             <ul className="text-lg font-medium transition-all duration-500">
               <li className="md:mb-6 mb-2">
-                <a href="#" className="text-heading-main hover:text-gray-900">
+                <Link href="#" className="text-heading-main hover:text-gray-900">
                   Our Projects
-                </a>
+                </Link>
               </li>
               <li className="md:mb-6 mb-2">
-                <a href="#" className=" text-heading-main hover:text-gray-900">
+                <Link href="#" className=" text-heading-main hover:text-gray-900">
                   Careers
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -73,14 +73,14 @@ const Footer = () => {
             </h4>
             <ul className="text-lg font-medium transition-all duration-500">
               <li className="md:mb-6 mb-2">
-                <a href="#" className="text-heading-main hover:text-gray-900">
+                <Link href="#" className="text-heading-main hover:text-gray-900">
                   Support Request
-                </a>
+                </Link>
               </li>
               <li className="md:mb-6 mb-2">
-                <a href="#" className=" text-heading-main hover:text-gray-900">
+                <Link href="/contact-us" className=" text-heading-main hover:text-gray-900">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
