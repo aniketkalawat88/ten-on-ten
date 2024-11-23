@@ -33,7 +33,7 @@ const ContactUs = () => {
         const isFetch = async () => {
             try {
                 setIsLoading(true);
-                const res = await axios.post("https://sheetdb.io/api/v1/59aqknib5ssla", isVal);
+                const res = await axios.post("https://sheetdb.io/api/v1/u0svl31vd3865", isVal);
                 setIsLoading(false);
                 toast.success("Data Submitted Successfully");
                 console.log(res, "res");

@@ -22,7 +22,7 @@ const handleSubmit = async (e) => {
   e.preventDefault();
   try{
       setIsLoading(true)
-      const res = await axios.post("https://sheetdb.io/api/v1/59aqknib5ssla", isVal);
+      const res = await axios.post("https://sheetdb.io/api/v1/u0svl31vd3865", isVal);
       console.log(isVal);
       toast.success("Data Submitted Successfully")
       setIsLoading(false)

@@ -34,35 +34,35 @@ const Footer = () => {
             </h4>
             <ul className="text-lg font-medium transition-all duration-500">
               <li className="md:mb-6 mb-2">
-                <Link href="#" className="text-heading-main hover:text-gray-900">
-                  Website
+                <Link href="/" className="text-heading-main hover:text-gray-900">
+                  Home
                 </Link>
               </li>
               <li className="md:mb-6 mb-2">
-                <Link href="#" className=" text-heading-main hover:text-gray-900">
-                  Social Media
+                <Link href="/our-service" className=" text-heading-main hover:text-gray-900">
+                Our Solutions
                 </Link>
               </li>
               <li>
-                <Link href="#" className=" text-heading-main hover:text-gray-900">
-                  Branding
+                <Link href="/blogs" className=" text-heading-main hover:text-gray-900">
+                Blogs
                 </Link>
               </li>
             </ul>
           </div>
           <div className="lg:mx-auto text-left ">
             <h4 className="text-xl text-primary-main font-bold md:mb-7 mb-4">
-              About
+              Quick Links
             </h4>
             <ul className="text-lg font-medium transition-all duration-500">
               <li className="md:mb-6 mb-2">
-                <Link href="#" className="text-heading-main hover:text-gray-900">
-                  Our Projects
+                <Link href="/about-us" className="text-heading-main hover:text-gray-900">
+                About Us
                 </Link>
               </li>
               <li className="md:mb-6 mb-2">
-                <Link href="#" className=" text-heading-main hover:text-gray-900">
-                  Careers
+                <Link href="/contact-us" className=" text-heading-main hover:text-gray-900">
+                Contact Us
                 </Link>
               </li>
             </ul>
@@ -73,13 +73,13 @@ const Footer = () => {
             </h4>
             <ul className="text-lg font-medium transition-all duration-500">
               <li className="md:mb-6 mb-2">
-                <Link href="#" className="text-heading-main hover:text-gray-900">
-                  Support Request
+                <Link href="/terms-and-condition" className="text-heading-main hover:text-gray-900">
+                  Terms And Condition
                 </Link>
               </li>
               <li className="md:mb-6 mb-2">
-                <Link href="/contact-us" className=" text-heading-main hover:text-gray-900">
-                  Contact
+                <Link href="/privacy-policy" className=" text-heading-main hover:text-gray-900">
+                  Privacy Policy
                 </Link>
               </li>
             </ul>

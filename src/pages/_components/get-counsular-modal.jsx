@@ -8,12 +8,12 @@ const GetCounsularModal = () => {
 
   const [isLoading, setIsLoading] = useState(false);
   const [isVal, setIsVal] = useState({
-    name: '',
-    email: '',
-    number: '',
-    message: '',
-    location: '',
-    property: ''
+    Name: '',
+    Email: '',
+    Number: '',
+    Message: '',
+    Location: '',
+    Property: ''
   });
 
   const handleChange = (e) => {
@@ -27,7 +27,7 @@ const GetCounsularModal = () => {
     e.preventDefault();
     try {
       setIsLoading(true);
-      const res = await axios.post("https://sheetdb.io/api/v1/59aqknib5ssla", isVal);
+      const res = await axios.post("https://sheetdb.io/api/v1/u0svl31vd3865", isVal);
       console.log(isVal);
       toast.success("Data Submitted Successfully");
       setIsLoading(false);
@@ -37,12 +37,12 @@ const GetCounsularModal = () => {
       setIsLoading(false);
     }
     setIsVal({
-      name: '',
-      email: '',
-      number: '',
-      message: '',
-      location: '',
-      property: ''
+      Name: '',
+      Email: '',
+      Number: '',
+      Message: '',
+      Location: '',
+      Property: ''
     });
   };
 
@@ -72,8 +72,8 @@ const GetCounsularModal = () => {
                     className="shadow text-lg appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     type="text"
                     placeholder="Name"
-                    name="name"
-                    value={isVal.name}
+                    name="Name"
+                    value={isVal.Name}
                     onChange={handleChange}
                     required
                   />
@@ -81,8 +81,8 @@ const GetCounsularModal = () => {
                     className="shadow text-lg appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     type="email"
                     placeholder="Email"
-                    name="email"
-                    value={isVal.email}
+                    name="Email"
+                    value={isVal.Email}
                     onChange={handleChange}
                     required
                   />
@@ -90,8 +90,8 @@ const GetCounsularModal = () => {
                     className="shadow text-lg appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     type="text"
                     placeholder="Number"
-                    name="number"
-                    value={isVal.number}
+                    name="Number"
+                    value={isVal.Number}
                     onChange={handleChange}
                     required
                   />
@@ -99,15 +99,15 @@ const GetCounsularModal = () => {
                     className="shadow text-lg appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     type="text"
                     placeholder="Location"
-                    name="location"
-                    value={isVal.location}
+                    name="Location"
+                    value={isVal.Location}
                     onChange={handleChange}
                     required
                   />
                   <select
                     className="shadow text-lg appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline col-span-2"
-                    name="property"
-                    value={isVal.property}
+                    name="Property"
+                    value={isVal.Property}
                     onChange={handleChange}
                     required
                   >
@@ -121,8 +121,8 @@ const GetCounsularModal = () => {
                     className="col-span-2 shadow text-lg min-h-0 appearance-none border rounded h-40 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-none"
                     type="text"
                     placeholder="Type your message here..."
-                    name="message"
-                    value={isVal.message}
+                    name="Message"
+                    value={isVal.Message}
                     onChange={handleChange}
                   />
                   <div className="flex justify-between">
